@@ -1,2 +1,2 @@
 # TRTPO-Project
-# BSUIR shedule for Windows
+# BSUIR schedule for Windows
