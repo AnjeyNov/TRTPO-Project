@@ -8,7 +8,12 @@
 ### 2.1 Программые интерфейсы
 Приложение выполняет HTTP запросы на унтернет-ресурс iis.bsuir.by. 
 ### 2.2 Интерфейс пользователя
-Иллюстрации представлены в папке [Mockups](https://github.com/AnjeyNov/TRTPO-Project/tree/master/Images/Mockups).
+Расписание на день.
+![Расписание на день](https://github.com/AnjeyNov/TRTPO-Project/blob/master/Images/Mockups/Day's%20schedule.png)
+Расписание на неделю.
+![Расписание на неделю](https://github.com/AnjeyNov/TRTPO-Project/blob/master/Images/Mockups/Week's%20schedule.png)
+Описание интерфейса
+![Описание интерфейса](https://github.com/AnjeyNov/TRTPO-Project/blob/master/Images/Mockups/Week's%20schedule%20with%20discripshion.png)
 ### 2.3 Характеристики пользователей
 #### 2.3.1 Целевая аудитория
 Студенты УО БГУИР, обладающие минимальной технической грамотностью.
