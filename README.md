@@ -1,6 +1,7 @@
 # TRTPO-Project
 # BSUIR schedule for Windows
 Язык реализации: C++
+
 Платформа: Qt 5.13.1
 
 # Содержание
