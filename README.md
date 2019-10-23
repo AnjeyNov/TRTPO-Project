@@ -6,4 +6,4 @@
 
 # Содержание
 1 [Документация](Documents)  
-1.1 [Требования](Documents/Requirements/Requirements%20Document.md)
+1.1 [Требования](Documents/Requirements/Software%20Requirements%20Specification.md)
