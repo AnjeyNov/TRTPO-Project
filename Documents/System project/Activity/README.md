@@ -35,7 +35,7 @@
 <a name="change_view_type"/>
 
 # 5 Сменить вид представдения
-![Сменить вид представдения](../../../Images/UML/Activity/Change%20view%20type.jpg)
+![Сменить вид представдения](../../../Images/UML/Activity/Сhange%20view%20type.jpg)
 
 <a name="display_schedule"/>
 
@@ -55,6 +55,6 @@
 <a name="update_schedule"/>
 
 # 9 Обнивить расписание
-![Обновить расписание](../../../Images/UML/Update_schedule.jpg)
+![Обновить расписание](../../../Images/UML/Activity/Update_schedule.jpg)
 
 
