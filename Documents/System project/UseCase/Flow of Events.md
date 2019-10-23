@@ -2,20 +2,20 @@
 ---
 
 # Содержание
-1 [Актеры](#actors)
-2 [Варианты использования](#use_cases)
-2.1 [Добавить группу](#add_group)
-2.2 [Удалить группу](#delete_group)
-2.3 [Сменить группу](#change_group)
-2.4 [Сменить подгруппу](#change_subgroup)
-2.5 [Сменить вид представдения](#change_view_type)
-2.6 [Отобразить расписание](#display_schedule)
-2.7 [Отобразить расписание на день](#display_day_schedule)
-2.8 [Отобразить расписание на неделю](#display_week_schedule)
-2.9 [Сменить неделю](#change_week)
-2.10 [Сменить день](#change_day)
-2.11 [Обнивить расписание](#update_schedule)
-2.12 [Загрузить расписание](#download_schedule) 
+1 [Актеры](#actors) 
+2 [Варианты использования](#use_cases) 
+2.1 [Добавить группу](#add_group) 
+2.2 [Удалить группу](#delete_group) 
+2.3 [Сменить группу](#change_group) 
+2.4 [Сменить подгруппу](#change_subgroup) 
+2.5 [Сменить вид представдения](#change_view_type) 
+2.6 [Отобразить расписание](#display_schedule) 
+2.7 [Отобразить расписание на день](#display_day_schedule) 
+2.8 [Отобразить расписание на неделю](#display_week_schedule) 
+2.9 [Сменить неделю](#change_week) 
+2.10 [Сменить день](#change_day) 
+2.11 [Обнивить расписание](#update_schedule) 
+2.12 [Загрузить расписание](#download_schedule)  
 
 
 <a name="actors"/>
