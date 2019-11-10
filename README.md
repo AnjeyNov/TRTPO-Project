@@ -9,4 +9,3 @@
 1.1 [Требования](Documents/Requirements/Software%20Requirements%20Specification.md)   
 1.2 [Диаграммы](Documents/System%20project/Readme.md)
 
-P.S. Напарник - Сикорский Тимофей Николаевич
