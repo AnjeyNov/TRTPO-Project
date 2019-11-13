@@ -21,7 +21,8 @@ public:
     // Constructors
     Day();
     Day(const Day &day);
-    Day(Day &&day);                   // Moving constructor
+    // Moving constructor
+    Day(Day &&day);
 
     // Destructor
     ~Day();
@@ -33,11 +34,13 @@ public:
     string getName() const;
     list<Lesson> getLessonList() const;
 
-    void addLesson(Lesson &&lesson);
-    void swap(Day &day);              // Swap method
+    void addLesson(const Lesson &lesson);
+    void swap(Day &day);
+    bool empty();
 
     Day &operator = (const Day &day);
-    Day &operator = (Day &&day);      // Move assignment operator
+    // Move assignment operator
+    Day &operator = (Day &&day);
 
 private:
     string name_;

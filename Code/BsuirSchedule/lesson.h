@@ -31,7 +31,7 @@ public:
     ~Lesson();
 
     // Set methods
-    void setTime(Time &time);
+    void setTime(const Time &time);
     void setSubject(const string &subject);
     void setNote(const string &note);
     void setClassroom(const string &classroom);
@@ -49,11 +49,15 @@ public:
     Lesson &operator = (const Lesson &lesson);
     Lesson &operator = (Lesson &&lesson);   // Move assignment operator
 
+    string getType() const;
+    void setType(const string &type);
+
 private:
     Time time_;
     string subject_;
     string note_;
     string classroom_;
+    string type_;
     short subgroupNumber_;
 };
 

@@ -18,21 +18,31 @@ class DownloadManager : public QObject
 public:
     explicit DownloadManager(QObject *parent = nullptr);
     DownloadManager();
-
-
-
-
+    
+    
 
 signals:
+    
+    void groupAdded();
+    void unavailableGroup();
+    void succes();
 
 public slots:
-
-    void onResult(QNetworkReply *reply);
-    void makeRequest(QString groupNumber);
-
+    void onScheduleRequestResult(QNetworkReply *reply);
+    void onCheckRequestResult(QNetworkReply *reply);
+    
+    void addGroup(QString groupNumber);
+    
 private:
-    QNetworkAccessManager *networkManager;
-
+    QString groupNumber_;
+    Schedule *newSchedule;
+    QNetworkAccessManager *scheduleDownloader_;
+    QNetworkAccessManager *checker_;
+    
+    
+    void makeScheduleRequest();
+    void makeCheckRequest();
+    
 };
 
 #endif // DOWNLOADMANAGER_H

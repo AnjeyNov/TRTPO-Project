@@ -19,7 +19,8 @@ public:
     // Constructors
     Time();
     Time(const Time &time);
-    Time(Time &&time); // Moving constructor
+    // Moving constructor
+    Time(Time &&time);
     Time(std::string&&, std::string&&);
 
     // Destructor
@@ -33,11 +34,12 @@ public:
     void setStart(const std::string &start);
     void setEnd(const std::string &end);
 
-    // Swap method
     void swap(Time &time);
 
     Time &operator = (const Time &time);
-    Time &operator = (Time &&time);     // Move assignment operator
+
+    // Move assignment operator
+    Time &operator = (Time &&time);
 
 private:
     std::string start_;

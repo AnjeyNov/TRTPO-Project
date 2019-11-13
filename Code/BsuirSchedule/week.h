@@ -5,7 +5,7 @@
 // This class is a day of the week that includes classes on that day.
 
 // number - number of the week (1,2,3,4)
-// dayList - days with classes this week
+// dayList - days with classes on this week
 
 
 
@@ -29,8 +29,9 @@ public:
     // Set method
     void setNumber(short value);
 
-    void addDay(Day& day);
+    void addDay(const Day& day);
     void swap(Week &week);              // Swap method
+    void clear();
     Week &operator = (const Week &week);
     Week &operator = (Week &&week);     // Move assignment operator
 

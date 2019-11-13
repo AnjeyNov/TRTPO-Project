@@ -18,12 +18,12 @@ Week::Week(Week &&week)
 
 Week::~Week()
 {
-
+    dayList_.clear();
 }
 
-void Week::addDay(Day &day)
+void Week::addDay(const Day &day)
 {
-    this->dayList_.push_back(std::move(day));
+    this->dayList_.push_back(day);
 }
 
 void Week::swap(Week &week)
@@ -32,11 +32,18 @@ void Week::swap(Week &week)
     std::swap(this->number_, week.number_);
 }
 
+void Week::clear()
+{
+    this->dayList_.clear();
+}
+
 Week &Week::operator = (const Week &week)
 {
     this->number_ = week.number_;
+    
     this->dayList_.clear();
     this->dayList_ = week.dayList_;
+    
     return *this;
 }
 

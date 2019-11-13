@@ -21,7 +21,9 @@ Lesson::Lesson(Lesson &&lesson)
 
 Lesson::~Lesson()
 {
-
+    this->subject_.clear();
+    this->note_.clear();
+    this->classroom_.clear();
 }
 
 string Lesson::getSubject() const
@@ -53,15 +55,21 @@ void Lesson::swap(Lesson &lesson)
     std::swap(this->subgroupNumber_, lesson.subgroupNumber_);
 }
 
-Lesson &Lesson::operator =(const Lesson &lesson)
+Lesson &Lesson::operator = (const Lesson &lesson)
 {
     this->time_ = lesson.time_;
+    
     this->subject_.clear();
     this->subject_ = lesson.subject_;
+    
     this->note_.clear();
     this->note_ = lesson.note_;
+    
+    this->classroom_.clear();
     this->classroom_ = lesson.classroom_;
+    
     this->subgroupNumber_ = lesson.subgroupNumber_;
+    
     return *this;
 }
 
@@ -71,23 +79,36 @@ Lesson &Lesson::operator =(Lesson &&lesson)
     return *this;
 }
 
-void Lesson::setTime(Time &time)
+string Lesson::getType() const
 {
-    time_ = std::move(time);
+    return type_;
+}
+
+void Lesson::setType(const string &type)
+{
+    type_ = type;
+}
+
+void Lesson::setTime(const Time &time)
+{
+    time_ = (time);
 }
 
 void Lesson::setSubject(const string &subject)
 {
+    this->subject_.clear();
     subject_ = subject;
 }
 
 void Lesson::setNote(const string &note)
 {
+    this->note_.clear();
     note_ = note;
 }
 
 void Lesson::setClassroom(const string &classroom)
 {
+    this->classroom_.clear();
     classroom_ = classroom;
 }
 
